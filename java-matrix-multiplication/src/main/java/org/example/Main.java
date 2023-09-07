@@ -39,8 +39,24 @@ public class Main {
             }
         }
 
+        for (int i = 0; i<rowSize;i++){
+            for (int j = 0; j<colSize1; j++){
+                System.out.print(calc.getMatrix1Element(i,j) + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("*");
+
+        for (int i = 0; i<colSize1;i++){
+            for (int j = 0; j<colSize2; j++){
+                System.out.print(calc.getMatrix2Element(i,j) + " ");
+            }
+            System.out.println();
+        }
+
         calc.multiplyMatrices(rowSize,colSize1,colSize2);
-        System.out.println("The answer is:");
+        System.out.println("=");
         for (int i=0;i<rowSize;i++){
             for (int j=0;j<colSize2;j++){
                 System.out.print(calc.getResultMatrixElement(i,j) + " ");

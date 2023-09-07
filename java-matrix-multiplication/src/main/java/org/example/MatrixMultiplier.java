@@ -47,6 +47,16 @@ public class MatrixMultiplier {
                                       int columnIdentifier){
         return resultMatrix[rowIdentifier][columnIdentifier];
     }
+
+    public int getMatrix1Element(int rowIdentifier,
+                                      int columnIdentifier){
+        return matrix1[rowIdentifier][columnIdentifier];
+    }
+
+    public int getMatrix2Element(int rowIdentifier,
+                                 int columnIdentifier){
+        return matrix2[rowIdentifier][columnIdentifier];
+    }
     public void setMatrixSize(int rowSize1, int colSize1, int colSize2){
         setMatrix1(rowSize1, colSize1);
         setMatrix2(colSize1, colSize2);
