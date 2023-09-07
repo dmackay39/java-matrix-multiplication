@@ -1,23 +1,23 @@
 package org.example;
 
 public class MatrixMultiplier {
-    public int[][] getMatrix1() {
+    private int[][] getMatrix1() {
         return matrix1;
     }
 
-    public void setMatrix1(int rowSize, int colSize) {
+    private void setMatrix1(int rowSize, int colSize) {
         this.matrix1 = new int[rowSize][colSize];
     }
 
-    public int[][] getMatrix2() {
+    private int[][] getMatrix2() {
         return matrix2;
     }
 
-    public void setMatrix2(int rowSize, int colSize) {
+    private void setMatrix2(int rowSize, int colSize) {
         this.matrix2 = new int[rowSize][colSize];
     }
 
-    public void setResultMatrix(int rowSize, int colSize) {
+    private void setResultMatrix(int rowSize, int colSize) {
         this.resultMatrix = new int[rowSize][colSize];
     }
 
@@ -38,7 +38,7 @@ public class MatrixMultiplier {
         matrix2[rowIdentifier][columnIdentifier] = element;
     }
 
-    public void setResultMatrixElement(int rowIdentifier,
+    private void setResultMatrixElement(int rowIdentifier,
                                   int columnIdentifier, int element){
         resultMatrix[rowIdentifier][columnIdentifier] = element;
     }
