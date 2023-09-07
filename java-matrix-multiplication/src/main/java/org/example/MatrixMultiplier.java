@@ -29,7 +29,7 @@ public class MatrixMultiplier {
     private int[][] resultMatrix;
 
     public void setMatrix1Element(int rowIdentifier,
-                                int columnIdentifier, int element){
+                                  int columnIdentifier, int element){
         matrix1[rowIdentifier][columnIdentifier] = element;
     }
 
@@ -39,12 +39,12 @@ public class MatrixMultiplier {
     }
 
     private void setResultMatrixElement(int rowIdentifier,
-                                  int columnIdentifier, int element){
+                                        int columnIdentifier, int element){
         resultMatrix[rowIdentifier][columnIdentifier] = element;
     }
 
     public int getResultMatrixElement(int rowIdentifier,
-                                       int columnIdentifier){
+                                      int columnIdentifier){
         return resultMatrix[rowIdentifier][columnIdentifier];
     }
     public void setMatrixSize(int rowSize1, int colSize1, int colSize2){
@@ -64,6 +64,4 @@ public class MatrixMultiplier {
             }
         }
     }
-
-
 }
