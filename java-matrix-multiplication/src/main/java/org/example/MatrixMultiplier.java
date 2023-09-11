@@ -14,7 +14,6 @@ public class MatrixMultiplier {
         this.resultMatrix = new int[rowSize][colSize];
     }
 
-
     private int[][] matrix2;
 
     private int[][] matrix1;
