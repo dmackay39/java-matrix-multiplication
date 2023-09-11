@@ -34,4 +34,22 @@ public class MatrixAdder {
         return matrix2[rowIdentifier][columnIdentifier];
     }
 
+    public void addMatrices(int rowSize1, int columnSize){
+        for (int i=0; i<rowSize1;i++){
+            for (int j=0; j<columnSize;j++){
+                int entry = matrix1[i][j] + matrix2[i][j];
+                setResultMatrixElement(i,j,entry);
+            }
+        }
+    }
+
+    public int[][] negMatrix(int[][] matrix, int rowSize, int colSize){
+        for (int i=0; i<rowSize;i++){
+            for (int j=0; j<colSize;j++){
+                matrix[i][j] = -matrix[i][j];
+            }
+        }
+        return matrix;
+    }
+
 }
