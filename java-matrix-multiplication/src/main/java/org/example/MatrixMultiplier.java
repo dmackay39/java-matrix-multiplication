@@ -1,16 +1,9 @@
 package org.example;
 
 public class MatrixMultiplier {
-    private int[][] getMatrix1() {
-        return matrix1;
-    }
 
     private void setMatrix1(int rowSize, int colSize) {
         this.matrix1 = new int[rowSize][colSize];
-    }
-
-    private int[][] getMatrix2() {
-        return matrix2;
     }
 
     private void setMatrix2(int rowSize, int colSize) {
