@@ -8,10 +8,20 @@ public class MatrixAdder {
 
     private int[][] resultMatrix;
 
-    private void setMatrices(int rowSize, int colSize) {
+    public void setMatrices(int rowSize, int colSize) {
         this.matrix1 = new int[rowSize][colSize];
         this.matrix2 = new int[rowSize][colSize];
         this.resultMatrix = new int[rowSize][colSize];
+    }
+
+    public void setMatrix1Element(int rowIdentifier,
+                                  int columnIdentifier, int element){
+        matrix1[rowIdentifier][columnIdentifier] = element;
+    }
+
+    public void setMatrix2Element(int rowIdentifier,
+                                  int columnIdentifier, int element) {
+        matrix2[rowIdentifier][columnIdentifier] = element;
     }
 
     private void setResultMatrixElement(int rowIdentifier,
@@ -43,13 +53,12 @@ public class MatrixAdder {
         }
     }
 
-    public int[][] negMatrix(int[][] matrix, int rowSize, int colSize){
-        for (int i=0; i<rowSize;i++){
-            for (int j=0; j<colSize;j++){
-                matrix[i][j] = -matrix[i][j];
+    public void subMatrices(int rowSize1, int columnSize){
+        for (int i=0; i<rowSize1;i++){
+            for (int j=0; j<columnSize;j++){
+                int entry = matrix1[i][j] - matrix2[i][j];
+                setResultMatrixElement(i,j,entry);
             }
         }
-        return matrix;
     }
-
 }
